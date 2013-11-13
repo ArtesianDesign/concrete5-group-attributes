@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+
+	<table name="GroupAttributeKeys">
+		<field name="akID" type="I" size="10">
+			<KEY/>
+			<UNSIGNED />
+		</field>
+		<field name="gakProfileDisplay" type="I1" size="1">
+			<NOTNULL/>
+			<DEFAULT value="0"/>
+		</field>
+		<field name="gakMemberListDisplay" type="I1" size="1">
+			<NOTNULL/>
+			<DEFAULT value="0"/>
+		</field>
+		<field name="gakProfileEdit" type="I1" size="1">
+			<NOTNULL/>
+			<DEFAULT value="1"/>
+		</field>
+		<field name="displayOrder" type="I" size="10">
+			<UNSIGNED />
+			<DEFAULT value="0"/>
+		</field>
+		<field name="gakIsActive" type="I1" size="1">
+			<NOTNULL/>
+			<DEFAULT value="1"/>
+		</field>
+	</table>
+
+	<table name="GroupAttributeValues">
+		<field name="gID" type="I" size="10">
+			<KEY/>
+			<DEFAULT value="0"/>
+			<UNSIGNED />
+		</field>
+		<field name="akID" type="I" size="10">
+			<KEY/>
+			<DEFAULT value="0"/>
+			<UNSIGNED />
+		</field>
+		<field name="avID" type="I" size="10">
+			<KEY/>
+			<DEFAULT value="0"/>
+			<UNSIGNED />
+		</field>
+	</table>
+
+</schema>

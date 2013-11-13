@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="atGroups">
+		<field name="avID" type="I" size="10">
+			<KEY/>
+			<DEFAULT value="0"/>
+			<UNSIGNED/>
+		</field>
+		<field name="value" type="C" size="255">
+			<NOTNULL/>
+			<DEFAULT value="0"/>
+		</field>
+	</table>
+	<table name="atGroupsSettings">
+		<field name="akID" type="I" size="10">
+			<KEY/>
+			<DEFAULT value="0"/>
+			<UNSIGNED/>
+		</field>
+		<field name="akAllowMultipleValues" type="L">
+			<DEFAULT value="1"/>
+		</field>
+		<field name="akShowDefaultGroups" type="L">
+			<DEFAULT value="0"/>
+		</field>
+	</table>
+</schema>
