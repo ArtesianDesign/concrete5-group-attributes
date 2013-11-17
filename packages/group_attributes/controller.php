@@ -264,7 +264,7 @@ class GroupAttributesPackage extends Package {
 	 */
 	private function _refreshDB() {
 		$group_at = AttributeType::getByHandle('group');
-		if (!is_object($groups_at) || !intval($groups_at->getAttributeTypeID())) {
+		if (!is_object($group_at) || !intval($group_at->getAttributeTypeID())) {
 			$group_at_db_path = $group_at->getAttributeTypeFilePath(FILENAME_ATTRIBUTE_DB);
 			Package::installDB($group_at_db_path);
 		}
